@@ -11,7 +11,7 @@ import com.example.fitplan.R
 
 class CommonRecyclerViewAdapter(val arrList: List<WorkoutPlanModelClass>) :
     RecyclerView.Adapter<CommonRecyclerViewAdapter.ViewHolder>() {
-    var itemOnClick:((WorkoutPlanModelClass)->Unit)?=null
+     var itemOnClick:((WorkoutPlanModelClass)->Unit) ?= null
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

@@ -25,9 +25,7 @@ class ChestFragmentMale : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-
-      return view
-
+        val view = inflater.inflate(R.layout.fragment_chest, container, false)
+        return view
     }
 }
