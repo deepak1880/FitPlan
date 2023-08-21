@@ -6,12 +6,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fitplan.modalclass.WorkoutPlanModelClass
 import com.example.fitplan.R
+import com.example.fitplan.modalclass.BodyPart
 
-class CommonRecyclerViewAdapter(val arrList: List<WorkoutPlanModelClass>) :
+class CommonRecyclerViewAdapter(val arrList: List<BodyPart>) :
     RecyclerView.Adapter<CommonRecyclerViewAdapter.ViewHolder>() {
-     var itemOnClick:((WorkoutPlanModelClass)->Unit) ?= null
+     var itemOnClick:((BodyPart)->Unit) ?= null
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

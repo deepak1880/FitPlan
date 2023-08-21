@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.fitplan.modalclass.WorkoutPlanModelClass
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
 import com.example.fitplan.R
+import com.example.fitplan.modalclass.WorkoutModalClass
 
 class MaleFragment : Fragment() {
     // TODO: Rename and change types of parameters
@@ -30,17 +30,9 @@ class MaleFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val arrList = ArrayList<WorkoutPlanModelClass>()
+        val arrList = WorkoutModalClass.BODY_PART_LIST
 
         val view = inflater.inflate(R.layout.fragment_male, container, false)
-
-        arrList.add(WorkoutPlanModelClass(R.drawable.main, "Chest Workout"))
-        arrList.add((WorkoutPlanModelClass(R.drawable.main, "Shoulders Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.main, "Legs Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.main, "Abs Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.main, "Triceps Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.main, "Back Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.main, "Biceps Workout")))
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.maleRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(context)

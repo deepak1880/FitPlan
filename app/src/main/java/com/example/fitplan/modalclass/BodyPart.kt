@@ -1,3 +1,3 @@
 package com.example.fitplan.modalclass
 
-open class BodyPart
+abstract class BodyPart(open val image:Int,open val text:String)
