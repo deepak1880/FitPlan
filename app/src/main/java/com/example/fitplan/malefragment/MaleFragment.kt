@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.modalclass.WorkoutPlanModelClass
@@ -20,13 +21,12 @@ class MaleFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-        }
 
+        }
         if (savedInstanceState?.isEmpty == true) {
             flag = 1
         }
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -43,26 +43,22 @@ class MaleFragment : Fragment() {
         arrList.add((WorkoutPlanModelClass(R.drawable.main, "Back Workout")))
         arrList.add((WorkoutPlanModelClass(R.drawable.main, "Biceps Workout")))
 
-
         val recyclerView = view.findViewById<RecyclerView>(R.id.maleRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         val recyclerAdapter = CommonRecyclerViewAdapter(arrList)
-
-        recyclerAdapter.itemOnClick?.let {
+        recyclerView.adapter = recyclerAdapter
+        recyclerAdapter.itemOnClick = {
             fragmentManager(ChestFragmentMale(), flag)
         }
-        recyclerView.adapter = recyclerAdapter
         return view
-
     }
-
     private fun fragmentManager(fragment: Fragment, flag: Int) {
         val ft = parentFragmentManager.beginTransaction()
         if (flag == 1) {
-            ft.add(R.id.chestRecyclerview, fragment)
+            ft.add(R.id.frag_container, fragment)
         } else {
-            ft.replace(R.id.chestRecyclerview, fragment)
+            ft.replace(R.id.frag_container, fragment)
         }
         ft.commit()
         ft.addToBackStack(null)

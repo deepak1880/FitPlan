@@ -9,21 +9,21 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.R
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
+import com.example.fitplan.malefragment.ChestFragmentMale
 import com.example.fitplan.modalclass.WorkoutPlanModelClass
 
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
 
 class FemaleFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
 
         }
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -32,20 +32,21 @@ class FemaleFragment : Fragment() {
 
         val view = inflater.inflate(R.layout.fragment_female, container, false)
 
-        arrList.add(WorkoutPlanModelClass(R.drawable.womennn, "Chest Workout"))
-        arrList.add((WorkoutPlanModelClass(R.drawable.womennn, "Shoulders Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.womennn, "Legs Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.womennn, "Abs Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.womennn, "Triceps Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.womennn, "Back Workout")))
-        arrList.add((WorkoutPlanModelClass(R.drawable.womennn, "Biceps Workout")))
-
+        arrList.add(WorkoutPlanModelClass(R.drawable.women,"Chest Workout"))
+        arrList.add((WorkoutPlanModelClass(R.drawable.women, "Shoulders Workout")))
+        arrList.add((WorkoutPlanModelClass(R.drawable.women, "Legs Workout")))
+        arrList.add((WorkoutPlanModelClass(R.drawable.women, "Abs Workout")))
+        arrList.add((WorkoutPlanModelClass(R.drawable.women, "Triceps Workout")))
+        arrList.add((WorkoutPlanModelClass(R.drawable.women, "Back Workout")))
+        arrList.add((WorkoutPlanModelClass(R.drawable.women, "Biceps Workout")))
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.femaleRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         val recyclerAdapter = CommonRecyclerViewAdapter(arrList)
         recyclerView.adapter = recyclerAdapter
+
         return view
+
     }
 }
