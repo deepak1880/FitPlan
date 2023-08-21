@@ -7,6 +7,7 @@
     tools:context=".malefragment.ChestFragmentMale">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/grey"
         android:id="@+id/chestRecyclerview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

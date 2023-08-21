@@ -1,6 +1,5 @@
 package com.example.fitplan.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,8 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.modalclass.WorkoutPlanModelClass
 import com.example.fitplan.R
 
-class CommonWorkoutPlanRecyclerViewAdapter( val arrList: List<WorkoutPlanModelClass>) :
-    RecyclerView.Adapter<CommonWorkoutPlanRecyclerViewAdapter.ViewHolder>() {
+class CommonRecyclerViewAdapter(val arrList: List<WorkoutPlanModelClass>) :
+    RecyclerView.Adapter<CommonRecyclerViewAdapter.ViewHolder>() {
+    var itemOnClick:((WorkoutPlanModelClass)->Unit)?=null
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         val imageButton = itemView.findViewById<ImageView>(R.id.imageButton)
@@ -30,5 +31,9 @@ class CommonWorkoutPlanRecyclerViewAdapter( val arrList: List<WorkoutPlanModelCl
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.imageButton.setImageResource(arrList[position].image)
         holder.textView.text = arrList[position].text
+
+        holder.itemView.rootView.setOnClickListener{
+            itemOnClick?.invoke(arrList[position])
+        }
     }
 }
