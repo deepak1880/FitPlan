@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.R
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
-import com.example.fitplan.malefragment.ChestFragmentMale
 import com.example.fitplan.modalclass.WorkoutPlanModelClass
 
 // TODO: Rename parameter arguments, choose names that match

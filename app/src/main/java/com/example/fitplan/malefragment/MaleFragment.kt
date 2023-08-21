@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.modalclass.WorkoutPlanModelClass
@@ -49,7 +48,7 @@ class MaleFragment : Fragment() {
         val recyclerAdapter = CommonRecyclerViewAdapter(arrList)
         recyclerView.adapter = recyclerAdapter
         recyclerAdapter.itemOnClick = {
-            fragmentManager(ChestFragmentMale(), flag)
+            fragmentManager(WorkoutFragmentMale(), flag)
         }
         return view
     }
