@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FitPlan</string>
+    <string name="action_bar">Welcome to FitPlan Workout</string>
+    <string name="fit_plan">FitPlan</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_age">Enter your age</string>
+    <string name="login">Login</string>
+    <string name="chest_and_triceps">Chest And Triceps</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
