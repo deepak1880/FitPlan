@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.R
 import com.example.fitplan.adapter.CommonWorkoutPlanRecyclerViewAdapter
 import com.example.fitplan.modalclass.WorkoutPlanModelClass
+import kotlinx.coroutines.NonDisposableHandle.parent
 
 
 class FemaleFragment : Fragment() {
@@ -44,7 +45,7 @@ class FemaleFragment : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.femaleRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        val recyclerAdapter = context?.let { CommonWorkoutPlanRecyclerViewAdapter(it, arrList) }
+        val recyclerAdapter = CommonWorkoutPlanRecyclerViewAdapter(arrList)
         recyclerView.adapter = recyclerAdapter
         return view
     }

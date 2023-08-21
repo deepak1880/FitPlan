@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.modalclass.WorkoutPlanModelClass
 import com.example.fitplan.R
 
-class CommonWorkoutPlanRecyclerViewAdapter(val arrList: List<WorkoutPlanModelClass>) :
+class CommonWorkoutPlanRecyclerViewAdapter( val arrList: List<WorkoutPlanModelClass>) :
     RecyclerView.Adapter<CommonWorkoutPlanRecyclerViewAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 

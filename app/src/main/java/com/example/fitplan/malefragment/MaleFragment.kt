@@ -42,7 +42,7 @@ class MaleFragment : Fragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.maleRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(context)
 
-        val recyclerAdapter = context?.let { CommonWorkoutPlanRecyclerViewAdapter(it, arrList) }
+        val recyclerAdapter = context?.let { CommonWorkoutPlanRecyclerViewAdapter(arrList) }
         recyclerView.adapter = recyclerAdapter
         return view
 
