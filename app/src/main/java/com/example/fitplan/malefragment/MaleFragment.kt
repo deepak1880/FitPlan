@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
 import com.example.fitplan.R
-import com.example.fitplan.modalclass.workoutmodalclass.MaleWorkoutModalClass
+import com.example.fitplan.modalclass.MaleWorkoutModalClass
 
 class MaleFragment : Fragment() {
     // TODO: Rename and change types of parameters

@@ -1,9 +1,7 @@
-package com.example.fitplan.modalclass.workoutmodalclass
+package com.example.fitplan.modalclass
 
 import android.os.Parcelable
 import com.example.fitplan.R
-import com.example.fitplan.modalclass.BodyPart
-import com.example.fitplan.modalclass.ExerciseModalClass
 import kotlinx.parcelize.Parcelize
 
 @Parcelize

@@ -7,7 +7,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.R
-import com.example.fitplan.modalclass.BodyPart
 import com.example.fitplan.modalclass.ExerciseModalClass
 
 class CommonExciseAdapter(val arrExcise: List<ExerciseModalClass>) :

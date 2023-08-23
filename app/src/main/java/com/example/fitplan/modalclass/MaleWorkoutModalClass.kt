@@ -1,7 +1,6 @@
-package com.example.fitplan.modalclass.workoutmodalclass
+package com.example.fitplan.modalclass
 
 import com.example.fitplan.R
-import com.example.fitplan.modalclass.BodyPart
 
 class MaleWorkoutModalClass() {
     companion object {

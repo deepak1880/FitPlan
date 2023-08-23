@@ -9,8 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.R
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
-import com.example.fitplan.modalclass.workoutmodalclass.FemaleWorkoutModalClass
-import com.example.fitplan.modalclass.workoutmodalclass.MaleWorkoutModalClass
+import com.example.fitplan.modalclass.FemaleWorkoutModalClass
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
