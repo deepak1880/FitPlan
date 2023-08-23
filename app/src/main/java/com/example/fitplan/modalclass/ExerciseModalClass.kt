@@ -4,4 +4,4 @@ import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class ExciseModalClass (val image:Int,val text:String) : Parcelable
+data class ExerciseModalClass (val image:Int, val text:String) : Parcelable

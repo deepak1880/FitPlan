@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.R
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
-import com.example.fitplan.modalclass.WorkoutModalClass
+import com.example.fitplan.modalclass.workoutmodalclass.FemaleWorkoutModalClass
+import com.example.fitplan.modalclass.workoutmodalclass.MaleWorkoutModalClass
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,7 +28,7 @@ class FemaleFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val arrList = WorkoutModalClass.BODY_PART_LIST
+        val arrList = FemaleWorkoutModalClass.FEMALE_PART_LIST
 
         val view = inflater.inflate(R.layout.fragment_female, container, false)
 

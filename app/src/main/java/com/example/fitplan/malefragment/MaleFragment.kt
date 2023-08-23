@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
 import com.example.fitplan.R
-import com.example.fitplan.modalclass.WorkoutModalClass
+import com.example.fitplan.modalclass.workoutmodalclass.MaleWorkoutModalClass
 
 class MaleFragment : Fragment() {
     // TODO: Rename and change types of parameters
@@ -20,7 +20,6 @@ class MaleFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-
         }
         if (savedInstanceState?.isEmpty == true) {
             flag = 1
@@ -30,7 +29,7 @@ class MaleFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val arrList = WorkoutModalClass.BODY_PART_LIST
+        val arrList = MaleWorkoutModalClass.MALE_PART_LIST
 
         val view = inflater.inflate(R.layout.fragment_male, container, false)
 
@@ -40,7 +39,11 @@ class MaleFragment : Fragment() {
         val recyclerAdapter = CommonRecyclerViewAdapter(arrList)
         recyclerView.adapter = recyclerAdapter
         recyclerAdapter.itemOnClick = {
-            fragmentManager(WorkoutFragmentMale(), flag)
+            val targetfrag=WorkoutFragmentMale()
+            targetfrag.arguments=Bundle().apply {
+                putParcelable("BodyPart",it)
+            }
+            fragmentManager(targetfrag, flag)
         }
         return view
     }
