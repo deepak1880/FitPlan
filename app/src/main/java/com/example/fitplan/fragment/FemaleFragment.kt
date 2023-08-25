@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.R
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
-import com.example.fitplan.modalclass.FemaleWorkoutList
+import com.example.fitplan.modal.FemaleWorkoutList
 
 class FemaleFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {

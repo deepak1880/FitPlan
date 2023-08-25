@@ -1,4 +1,4 @@
-package com.example.fitplan.modalclass
+package com.example.fitplan.modal
 
 import android.os.Parcelable
 import com.example.fitplan.R

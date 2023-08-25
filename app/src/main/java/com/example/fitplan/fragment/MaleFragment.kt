@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fitplan.adapter.CommonRecyclerViewAdapter
 import com.example.fitplan.R
-import com.example.fitplan.modalclass.MaleWorkoutList
+import com.example.fitplan.modal.MaleWorkoutList
 
 
 class MaleFragment : Fragment() {

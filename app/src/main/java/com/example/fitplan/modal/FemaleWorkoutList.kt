@@ -1,4 +1,4 @@
-package com.example.fitplan.modalclass
+package com.example.fitplan.modal
 
 import com.example.fitplan.R
 
