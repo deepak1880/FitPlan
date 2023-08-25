@@ -20,7 +20,7 @@ class CommonRecyclerViewAdapter(val arrList: List<BodyPart>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.workoutplancardview, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.workout_plan, parent, false)
         return ViewHolder(view)
     }
 

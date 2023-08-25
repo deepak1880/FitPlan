@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AppCompat.MySplash" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="windowSplashScreenBackground">#000000</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/fitplanlogo</item>
+        <item name="postSplashScreenTheme">@style/Theme.FitPlan</item>
+    </style>
+</resources>
