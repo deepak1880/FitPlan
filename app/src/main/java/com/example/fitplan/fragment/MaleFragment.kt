@@ -15,10 +15,6 @@ import com.example.fitplan.modal.MaleWorkoutList
 
 
 class MaleFragment : Fragment() {
-
-    private var param1: String? = null
-    private var param2: String? = null
-
     var flag = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,10 +25,8 @@ class MaleFragment : Fragment() {
     }
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-
 
         val arrList = MaleWorkoutList.MALE_PART_LIST
 
@@ -62,6 +56,7 @@ class MaleFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         (requireActivity() as AppCompatActivity).supportActionBar?.hide()
     }
+
 
     private fun fragmentManager(fragment: Fragment, flag: Int) {
         val ft = parentFragmentManager.beginTransaction()

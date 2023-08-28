@@ -8,11 +8,13 @@ import kotlinx.parcelize.Parcelize
 class BicepWorkout(override val image: Int, override val text: String) : BodyPart(image, text),
     Parcelable {
     val BICEPS_WORKOUTS_LIST : ArrayList<Exercise> = arrayListOf(
-        Exercise(R.drawable.chest,"Barbel curl"),
-        Exercise(R.drawable.chest,"Cable curl"),
-        Exercise(R.drawable.chest,"Dumbell curl"),
-        Exercise(R.drawable.chest,"Barbel curl"),
-        Exercise(R.drawable.chest,"Picher curl"),
+        Exercise(R.drawable.mendumbellpress,"Dumbbell Bench Press"),
+        Exercise(R.drawable.mencablefly,"Medium Cable Flye"),
+        Exercise(R.drawable.menlowcable,"Low-Cable Crossover"),
+        Exercise(R.drawable.inclinedumbellfly,"Incline Dumbbell Flye"),
+        Exercise(R.drawable.mendumbellfly,"Dumbbell Flye"),
+        Exercise(R.drawable.mencablecross,"Cable Crossover"),
+        Exercise(R.drawable.meninclinepress,"Decline Dumbell press"),
     )
 
     override fun getExceriseList(): List<Exercise> {
