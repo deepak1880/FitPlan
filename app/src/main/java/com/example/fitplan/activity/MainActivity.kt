@@ -18,13 +18,13 @@ import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
 
+
     val TAG = "MainActivity"
     private lateinit var editTextName: TextInputEditText
     private lateinit var editTextAge: TextInputEditText
     private lateinit var buttonLogin: Button
     private lateinit var sharedPreferences: SharedPreferences
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
